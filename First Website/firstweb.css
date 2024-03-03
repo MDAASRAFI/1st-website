@@ -1,0 +1,814 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.navigation{
+    background-image: linear-gradient(dodgerblue,rgb(4, 44, 84));
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+
+}
+.navigation >ul{
+    display: flex;
+    margin-right: 50px;
+}
+
+.navigation > ul > li{
+    list-style-type: none;
+    margin: 0px 5px;
+    padding: 15px 0px;
+    margin-left: -5px;
+}
+
+.navigation > ul > li>a{
+    text-decoration: none;
+color: white;
+font-size: 15px;
+border-right: 1px solid white;
+padding:15px 20px;
+transition: 0.5s;
+
+}
+
+.navigation > ul> li:first-child>a{
+    border-left: 1px solid white;
+    padding-left: 20px;
+
+}
+
+.navigation>ul>li>a:hover {
+    background-color: darkorange;
+}
+
+.logo>h3{
+    color: azure;
+    margin-left: 50px;
+}
+
+/* dropdown menu code start */
+
+.dropdown{
+    
+    background-color: cornflowerblue;
+    text-align: center;
+    margin-top: 20px;
+ width: 180.6px; 
+   position: absolute;
+   margin-top: 15px;
+   opacity: 0;
+   transition: .5s;
+   visibility: hidden;
+   transition-delay: 0s;
+   transform: scaleY(0);
+   transform-origin: top;
+   box-shadow: 10px 10px 8px black;
+
+}
+
+.dropdown>li:first-child{
+    border-top: 1px solid white;
+}
+
+.dropdown>li{
+    list-style-type: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+.dropdown>li:hover{
+background-color: orange;
+
+}
+
+.dropdown>li>a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navigation>ul>li:hover>ul{
+    opacity: 1;
+    visibility:visible;
+    
+transform: scaleY(1);
+}
+
+/* hero area start here */
+#main-header{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.542)), url(image/Untitled\ design\ \(25\).png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.header-container{
+    padding-top: 100px;
+}
+
+.header-container>h1{
+    background-color: rgba(0, 0, 255, 0.547);
+    width: 500px;
+    margin:20px auto;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+
+.header-container>button{
+    background-color: blueviolet;
+    border:none;
+    padding: 15px 25px;
+    font-size: 30px;
+    margin-top: 10px;
+    border-radius: 33px 10px ;
+    color: white;
+    cursor: pointer;
+transition: .5s;
+}
+
+.header-container>button:hover{
+    background-color: rgba(255, 255, 0, 0);
+    color: black;
+}
+
+.header-container>h4{
+     color: blueviolet;
+}
+
+.icon>a{
+    color: white;
+    text-decoration: none;
+}
+
+.icon>a>i{
+    background-color: black;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 3.2;
+    color: red;
+}
+
+.icon>a>i:hover{
+    background-color: rgba(0, 128, 0, 0);
+}
+
+
+/* first section start here */
+.firstsec{
+    display: flex;
+    width: 1001px;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+    justify-content: space-between;
+
+    
+}
+
+.programing{
+        width: 300px;
+        padding: 30px 10px;
+        transition: .5s;
+        
+}
+.programing>i{
+    font-size: 50px;
+}
+
+.programing>h1{
+    margin: 15px 0px;
+}
+
+.programing:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+
+/* #firstsection{
+    background-color: lightcoral;
+} */
+
+/* 2nd section start here */
+
+.smartarea-title>h2{
+    text-align:center ;
+    padding: 30px 0px;
+    font-size: 40px;
+     position: relative;
+}
+.smartarea-title>h2::after {
+    content: '';
+    top: 91px;
+    left: 590px;
+    width: 99px;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
+}
+
+.smart-area{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 50px 10px;
+
+
+
+
+
+
+
+}
+.timg{
+    width: 500px;
+}
+.text{
+    width: 500px;
+}
+
+.text>h2{
+    margin: 20px 0px;
+}
+
+.text>h3{
+    color: brown;
+}
+
+.text>button{
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    
+    
+    padding: 10px 30px;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.text>button:hover{
+    background-color: rgb(226, 15, 15);
+}
+
+/* third sect here */
+.grey{
+    background-color:#fafafa;
+}
+
+
+.services-title{
+    text-align: center;
+}
+
+.services-title>h2{
+    font-size:33px ;
+    margin: 10px auto;
+}
+
+.each-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+    padding-top: 30px ;
+    padding-bottom: 50px;
+}
+
+.parent-area{
+    width: 1000px;
+    margin: auto;
+}
+
+.same{
+    background-color: lightblue;
+    padding: 15px;
+
+}
+.same>i{
+    font-size: 40px;
+    padding: 15px 25px;
+    color: brown;
+}
+.same>h3{
+    padding: 15px;
+}
+
+.same:hover{
+    background-color: lightskyblue;
+}
+
+
+/* <!-- fourth section start here  --> */
+
+.course>h2{
+
+    font-size: 33px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+.course-pricing{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+
+.child{
+    width: 310px;
+    
+}
+
+.child>img{
+    max-width: 100% ;
+}
+
+.card-1{
+    width: 310px;
+    box-shadow:5px 5px 10px gray ;
+}
+
+.card-1>h3{
+    font-size: 25px ;
+    margin: 10px 0px;
+}
+
+.card-1>p{
+    padding: 10px 0px;
+}
+
+.md{
+border-top: 2px  dashed gray;
+border-bottom: 2px  dashed gray;
+padding: 10px 0px;
+margin: 15px 20px;
+
+
+}
+
+.dollar{
+    font-size:25px ;
+    font-weight: bold;
+}
+
+.month{
+    color: grey;
+}
+
+.card-1>button{
+    background-color: brown;
+    border: 2px solid black;
+    padding: 7px 15px;
+    margin:20px 0px ;
+    color: white;
+    border-radius: 3px;
+    transition: .5s;
+
+}
+
+.card-1>button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.card-1>a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+
+    
+}
+
+
+.grey2{
+    background-color: #fafafa;
+    margin-top: 50px;
+}
+
+
+/* <!-- fifth sec start here --> */
+.parent-5{
+    padding-bottom: 50px;
+}
+.testimonial{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+
+.testimonial>h2{
+    font-size: 33px;
+    margin-bottom: 11px;
+}
+
+.testimonial>h4{
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.section-5{
+    background-color: bisque;
+}
+
+.fleximage>img{
+    width: 77px;
+    border-radius: 50%;
+    border: 3px solid aqua;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.tgrid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 1000px;
+    margin: auto;
+    gap: 20px;
+}
+
+.flex1{
+    display: flex;
+    background-color: white;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.test-text{
+    width: 300px;
+}
+
+.test-text>h2>span{
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.test-text>i{
+    margin-top: 10px;
+    color: orange;
+}
+
+
+/* parallax section start here */
+.section-6{
+    background-image: url(image/pexels-steve-johnson-1269968.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0px;
+}
+
+.parallax{
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.parralaxc>i{
+    font-size: 30px;
+    padding: 15px 0px;
+
+}
+.parralaxc>h2{
+    margin: 15px 0px;
+    font-size:30px ;
+    
+}
+
+
+
+/* blog sec start here */
+.testimonial-title{
+    text-align: center;
+}
+
+.testimonial-title>h2{
+    font-size: 45px;
+    margin-top: 33px;
+}
+
+.testimonial-title>h4{
+    letter-spacing: 7px;
+    color: grey;
+    padding: 25px 0px 33px 0px;
+}
+
+.blogitemparent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+
+}
+
+.blog-container{
+    width: 1000px;
+    
+    margin: auto;
+}
+
+.blogimage{
+    max-width: 100%;
+    height: 250px;
+    transition: .5s;
+
+}
+
+
+.blogimgicondiv{
+    position: relative;
+    overflow: hidden;
+}
+
+.blogicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    display: grid;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.blogicon>i{
+    font-size: 45px;
+}
+
+
+.blogimgicondiv:hover .blogicon{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.413);
+}
+
+.blogimgicondiv:hover .blogimage{
+    transform: scale(1.7);
+}
+
+.singleblogitem{
+    text-align: center;
+}
+.singleblogitem>p{
+    color: gray ;
+}
+
+
+/* <!-- conatct section code start here --> */
+
+.Contactus{
+    text-align: center;
+}
+
+.Contactus>h2{
+    font-size: 45px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.Contactus>h4{
+    letter-spacing: 7px;
+    padding-bottom: 20px;
+}
+
+.contact{
+    width: 1000px;
+    margin: auto;
+    padding-bottom:100px ;
+}
+
+.flex8{
+    background-color: #eaecf0;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.flex9{
+    display: flex;
+    
+
+}
+
+.ftag{
+    width: 667px;
+}
+
+.flex9 input{
+    width: 255px;
+    margin: 0px 20px;
+    height: 33px;
+    border: none;
+    padding: 0px 5px;
+
+}
+
+.flex9 h4{
+    margin: 40px 20px 10px 20px;
+}
+
+
+.subject{
+    border: none;
+    width: 601px;
+    height: 33px;
+    margin: 0px 20px;
+    padding: 0px 5px;
+}
+
+.sh4{
+    margin: 20px 20px 10px 20px ;
+}
+
+.message h4{
+    margin: 20px 20px 10px 20px;
+
+}
+
+.message textarea{
+    width: 601px ;
+    margin: 0px 20px;
+    height: 70px;
+    border: none;
+}
+
+.message input{
+    margin: 20px 20px 10px 20px ;
+    padding: 10px 15px;
+    background-color: rgb(10, 10, 201);
+    border: none;
+    color: white;
+border-radius: 5px;
+}
+
+.contactlist{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 20px 30px 20px;
+    text-align: center;
+    
+}
+
+.contactsame>i{
+    background-color: rgb(10, 10, 201);
+    border-radius: 50%;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px ;
+
+}
+
+.contactsame  span{
+    font-weight: bold;
+}
+
+/* footer section start here */
+footer{
+    background-color: rgb(7, 7, 147);
+}
+.footer-container{
+    width: 1000px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.footerflex{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid white;
+    padding: 30px 0px;
+
+
+}
+
+.findus{
+    width:250px;
+    color: grey;
+
+}
+
+.findus>h2{
+    color: white;
+}
+.findus>p{
+    padding: 20px 0px;
+}
+.footericon{
+    margin-bottom: 10px;
+}
+
+.footericon>i{
+    color: white;
+}
+
+.quicklinks{
+    color: grey;
+    
+
+
+}
+
+.quicklinks>p{
+    padding: 5px 0px;
+}
+
+.quicklinks>h2{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.quicklinks1{
+    color: gray;
+}
+
+.quicklinks1>h2{
+    color: white;
+    padding-bottom: 20px;
+
+}
+
+.quicklinks1>p{
+    padding: 5px 0px;
+}
+
+.followus{
+    color: gray;
+
+}
+
+.followus>h2{
+    color: white;
+    padding-bottom: 20px ;
+}
+
+.followuslink>i{
+    color: white;
+
+}
+
+.followuslink>a{
+    color: brown;
+    text-decoration: none;
+    
+}
+
+.followuslink{
+    padding: 5px 0px;
+}
+
+.bfw{
+    width: 700px;
+    margin: auto;
+    
+
+
+}
+
+.bfooter{
+    display: flex;
+    justify-content: space-between;
+    color:white ;
+    margin: 20px 0px;
+    
+    
+
+   
+}
+
+.lastfooter{
+    color: gray;
+    text-align: center;
+}
+.lastfooter>p>span{
+    color: brown;
+}
+
+
+
+
+

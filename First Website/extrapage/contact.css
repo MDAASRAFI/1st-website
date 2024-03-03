@@ -1,0 +1,97 @@
+
+nav{
+    position: sticky;
+    top: 0;
+}
+   
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #30003B ;
+    height: 65px;
+    border-bottom: 5px solid  #5d0272 ;
+
+}
+
+    
+
+
+.navigation>.himage>img{
+    width: 81px ;
+}
+
+.navigation>ul{
+display: flex;
+
+
+}
+
+.navigation>ul>li{
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+.navigation>ul>li>a{
+    color: #11CCF5;
+text-decoration: none;
+padding:15px 20px;
+transition: .5s;
+
+
+}
+
+.navigation>ul>li>a:hover{
+    background-color: rgb(150, 23, 182);
+    color: white;
+    border-radius:5px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start here */
+.maincontainer{
+    width: 777px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    box-shadow: 15px 15px 10px gray;
+}
+
+.maincontainer input{
+    margin-bottom: 21px ;
+    width: 399px;
+    border: none;
+    border-radius: 20px;
+    padding: 11px;
+}
+
+.maincontainer textarea{
+    width:399px ;
+    border-radius: 11px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.maincontainer .button{
+    margin-bottom:30px ;
+    width: 333px;
+    padding: 11px;
+    border-radius: 21px;
+    border: none;
+    background: radial-gradient(to left,aqua, lightblue, rgb(0, 191, 255) )  ;
+}

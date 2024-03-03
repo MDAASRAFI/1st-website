@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: azure;
+    padding: 21px;
+}
+
+.navigation .header h1{
+    margin-left: 33px;
+}
+
+.navigation>ul>li{
+    list-style-type: none;
+    margin: 0px 30px;
+    
+}
+
+.navigation>ul{
+    display: flex;
+}
+
+.navigation>.up>.signin{
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}
+
+.navigation .up{
+    margin-right: 33px;
+}
+
+
+.icon{
+    font-size: 77px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.calculator{
+    width: 20%; 
+    
+    border: 2px solid skyblue;
+    padding: 15px;
+    
+}

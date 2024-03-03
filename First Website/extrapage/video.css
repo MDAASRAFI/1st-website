@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+   
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #30003B ;
+    height: 65px;
+    border-bottom: 5px solid  #5d0272 ;
+
+}
+
+    
+
+
+.navigation>.himage>img{
+    width: 81px ;
+}
+
+.navigation>ul{
+display: flex;
+
+
+}
+
+.navigation>ul>li{
+    list-style-type: none;
+    padding: 0px 15px;
+}
+
+.navigation>ul>li>a{
+    color: #11CCF5;
+text-decoration: none;
+padding:15px 20px;
+transition: .5s;
+
+
+}
+
+.navigation>ul>li>a:hover{
+    background-color: rgb(150, 23, 182);
+    color: white;
+    border-radius:5px ;
+}
+
+
+
+
+
+/* video page start here */
+
+
+
+.testimonial-title{
+    text-align: center;
+}
+
+.testimonial-title>h2{
+    font-size: 45px;
+    margin-top: 33px;
+}
+
+.testimonial-title>h4{
+    letter-spacing: 7px;
+    color: grey;
+    padding: 25px 0px 33px 0px;
+}
+
+.blogitemparent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+
+}
+
+.blog-container{
+    width: 1000px;
+    
+    margin: auto;
+}
+
+.blogimage{
+    max-width: 100%;
+    height: 250px;
+    transition: .5s;
+
+}
+
+
+.blogimgicondiv{
+    position: relative;
+    overflow: hidden;
+}
+
+.blogicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    display: grid;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.blogicon>i{
+    font-size: 45px;
+}
+
+
+.blogimgicondiv:hover .blogicon{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.413);
+}
+
+.blogimgicondiv:hover .blogimage{
+    transform: scale(1.7);
+}
+
+.singleblogitem{
+    text-align: center;
+}
+.singleblogitem>p{
+    color: gray ;
+}
